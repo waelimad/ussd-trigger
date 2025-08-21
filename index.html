@@ -1,13 +1,16 @@
 <!doctype html>
 <html>
-  <head><meta name="viewport" content="width=device-width, initial-scale=1"></head>
-  <body style="font-family: system-ui; padding:20px;">
-    <a href="tel:*120*9%23"
-       style="display:inline-block;padding:14px 20px;border-radius:12px;
-              text-decoration:none;font-weight:600;
-              background:#7A138F;color:#fff;">
-      Activate Now
-    </a>
-    <p style="margin-top:12px;font-size:14px;">If prompted, tap “Call” to send the code.</p>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      // Auto redirect to dialer when page loads
+      window.onload = function() {
+        window.location.href = "tel:*120*9%23";
+      };
+    </script>
+  </head>
+  <body style="font-family: system-ui; padding:20px; text-align:center;">
+    <h2>Activating Bundle...</h2>
+    <p>If nothing happens, <a href="tel:*120*9%23">tap here to dial manually</a>.</p>
   </body>
 </html>
